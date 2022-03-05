@@ -1,0 +1,23 @@
+CREATE TABLE `collection` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `clientnumber` int NOT NULL,
+  `collectiondate` varchar(255) DEFAULT NULL,
+  `premium` int NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=117 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+CREATE TABLE `contract` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `clientnumber` int NOT NULL,
+  `collectionday` int NOT NULL,
+  `product_code` varchar(255) DEFAULT NULL,
+  `status` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+CREATE TABLE `product` (
+  `product_code` varchar(255) NOT NULL,
+  `premium` int NOT NULL,
+  PRIMARY KEY (`product_code`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+SELECT * FROM springbatchdb.collection;
