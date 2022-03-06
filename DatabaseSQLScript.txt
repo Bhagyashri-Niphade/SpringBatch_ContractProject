@@ -1,3 +1,4 @@
+/*Create query for Collection (output) table*/
 CREATE TABLE `collection` (
   `id` int NOT NULL AUTO_INCREMENT,
   `clientnumber` int NOT NULL,
@@ -6,6 +7,8 @@ CREATE TABLE `collection` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=117 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
+
+/*Create query for Contract (Intput) table*/
 CREATE TABLE `contract` (
   `id` int NOT NULL AUTO_INCREMENT,
   `clientnumber` int NOT NULL,
@@ -15,9 +18,19 @@ CREATE TABLE `contract` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
+
+/*Create query for product table*/
 CREATE TABLE `product` (
   `product_code` varchar(255) NOT NULL,
   `premium` int NOT NULL,
   PRIMARY KEY (`product_code`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-SELECT * FROM springbatchdb.collection;
+
+
+/*Insert query for contract table*/
+INSERT INTO `contract` VALUES (1,101,5,'PREMIER','NC'),(2,102,5,'STARTER','NC'),(3,103,7,'PREMIER','NC'),(4,104,10,'STARTER','NC'),(5,105,15,'PREMIER','NC'),(6,106,20,'STARTER','NC');
+
+
+/*Insert query for product table*/
+INSERT INTO `product` VALUES ('PREMIER',300),('STARTER',100);
+
