@@ -6,10 +6,7 @@ import org.springframework.batch.core.launch.support.RunIdIncrementer;
 import org.springframework.batch.item.ItemWriter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.*;
-
-import com.spring.batch.component.CollectionProcessor;
-import com.spring.batch.component.CollectionWriter;
-import com.spring.batch.component.ContractReader;
+import com.spring.batch.component.*;
 import com.spring.batch.entity.*;
 
 
